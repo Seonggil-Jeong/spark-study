@@ -1,4 +1,7 @@
 ./idea/**
+
+/python-code/.idea/**
+/scala-code/.idea/**
 # Project exclude paths
 /scala-code/project/target/
 /scala-code/target/
