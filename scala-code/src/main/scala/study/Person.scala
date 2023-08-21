@@ -1,7 +1,5 @@
 package study
 
-import scala.annotation.unused
-
 class Person(val name: String, // 접근 가능, 변경 불가
              var age: Int, // 접근 가능, 변경 가능
              id: String = "DEFAULT-ID" // 접근 불가능, 변경 불가능

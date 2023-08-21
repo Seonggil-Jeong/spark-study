@@ -4,5 +4,6 @@
 /scala-code/.idea/**
 # Project exclude paths
 /scala-code/project/target/
+/scala-code/project/project/target/
 /scala-code/target/
 /scala-code/target/scala-2.13/classes/

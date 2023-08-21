@@ -1,13 +1,16 @@
-ThisBuild / version := "0.1.0-SNAPSHOT"
-
-ThisBuild / scalaVersion := "2.13.11"
-
-lazy val root = (project in file("."))
-  .settings(
-    name := "scala-code",
-    version := "0.1"
+lazy val root = (project in file(".")).
+  settings(
+    inThisBuild(List(
+      organization := "com.example",
+      scalaVersion := "2.11.7",
+      version      := "0.1.0-SNAPSHOT"
+    )),
+    name := "scala-core",
+    libraryDependencies ++= List(
+      "org.twitter4j" % "twitter4j-core" % "4.0.6",
+      "org.apache.bahir" % "spark-streaming-twitter_2.11" % "2.1.0",
+      "org.apache.spark" % "spark-core_2.11" % "2.2.0",
+      "org.apache.spark" % "spark-streaming_2.11" % "2.2.0"
+    ),
+    retrieveManaged := true
   )
-
-val sparkVersion = "3.3.2"
-libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion
-libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVersion
