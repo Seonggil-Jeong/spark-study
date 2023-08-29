@@ -7,3 +7,5 @@
 /scala-code/project/project/target/
 /scala-code/target/
 /scala-code/target/scala-2.13/classes/
+
+/airflow/logs/**
